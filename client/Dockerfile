@@ -2,9 +2,9 @@ FROM redhat/ubi9-minimal:9.3-1552@sha256:582e18f13291d7c686ec4e6e92d20b24c62ae0f
 
 ARG RUNTIMEUSER=1001
 
-ENV ARTIFACT_JAR_PATTERN=prometheus-rsocket-client-test-1.0.0-SNAPSHOT-exe.jar
+ENV ARTIFACT_JAR_PATTERN=prometheus-rsocket-client-native-test-1.0.0-SNAPSHOT-exe.jar
 ENV MAIN_CLASS=prometheus.rsocket.client.test.PrometheusRSocketClientTestApplication
-ENV BINARY_NAME=prometheus-rsocket-client-test-application
+ENV BINARY_NAME=prometheus-rsocket-client-native-test-application
 
 ENV NIK_TAR_GZ=bellsoft-liberica-vm-openjdk17.0.10+13-23.0.3+1-linux-aarch64.tar.gz
 ENV NIK_DOWNLOAD_URL=https://github.com/bell-sw/LibericaNIK/releases/download/23.0.3%2B1-17.0.10%2B13/${NIK_TAR_GZ}
