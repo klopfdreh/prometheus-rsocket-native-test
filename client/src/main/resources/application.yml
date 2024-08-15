@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+management:
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+micrometer:
+  prometheus:
+    rsocket:
+      port: 7001
+      host: ${DOCKER_HOST:localhost}
