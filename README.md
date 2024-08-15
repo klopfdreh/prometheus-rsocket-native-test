@@ -7,3 +7,4 @@
 5. (Prometheus RSocket Client Native Image) run command `docker build -t testimg .`
 6. (Prometheus RSocket Client Native Image) run command `docker images` to find the image id
 7. (Prometheus RSocket Client Native Image) run command `docker run --rm -e DOCKER_HOST=host.docker.internal <image_id>` to run the actual image
+8. Access `http://localhost:8080/metrics/connected` on the host and you should see metrics with `main_application_class=prometheus.rsocket.client.test.PrometheusRSocketClientTestApplication`
